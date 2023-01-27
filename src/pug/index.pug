@@ -1,0 +1,120 @@
+extends common/layout
+
+block content 
+ main.page
+  section.page__main
+    .main-block__container
+      .main-block__box
+        h2.main-block__title
+          | SHARE YOUR
+          | HOLIDAY DREAM
+        h3.main-block__subtitle And find the perfect partner to fullfill it
+        a.main-block__link(href='#') Find your holiday partner
+  section.page__dreamshare
+    .dreamshare-block__container
+      h2.dreamshare-block__title.title-block How Dreamshare works?
+      .dreamshare-block__item
+        picture.dreamshare-block__picture
+          img.dreamshare-block__icon(src='images/Step 1.png', alt='')
+          .dreamshare-block__box
+            .dreamshare-block__box-point STEP 1
+            h3.dreamshare-block__box-subtitle Sed leo enim, condimentum
+            p.dreamshare-block__box-text
+              | Quisque libero libero, dictum non turpis in,
+              | luctus semper lorem. Donec rhoncus a leo sit amet facilisis.
+        picture.dreamshare-block__picture
+          img(src='images/Step 2.png', alt='')
+          .dreamshare-block__box
+            .dreamshare-block__box-point STEP 2
+            h3.dreamshare-block__box-subtitle.box-subtitle-second Morbi velit risus
+            p.dreamshare-block__box-text
+              | Nulla venenatis tempor dui in molestie. Nulla quis
+              | dictum purus, sit amet porttitor est.
+        picture.dreamshare-block__picture
+          img.dreamshare-block__icon(src='images/Step 3.png', alt='')
+          .dreamshare-block__box
+            .dreamshare-block__box-point STEP 3
+            h3.dreamshare-block__box-subtitle Sed leo enim, condimentum
+            p.dreamshare-block__box-text
+              | Quisque libero libero, dictum non turpis in,
+              | luctus semper lorem. Donec rhoncus a leo sit amet facilisis.
+  section.page__team
+    .team__container
+      h2.page__title.title-block Meet a partner for your best holiday
+      ul.team-list
+        li.team-list__member
+          .team-list__thumb.thumb-music
+            picture
+              img(src='images/avatar-music.png', alt='')
+          .team-list__info
+            h3.team-list__info-name Bradley Hunter
+            p.team-list__info-description
+              | Based in Chicago. I love playing tennis and loud
+              | music.
+        li.team-list__member.second-member
+          .team-list__thumb.thumb-paint
+            picture
+              img(src='images/avatar-paint.png', alt='')
+          .team-list__info
+            h3.team-list__info-name Marie Bennett
+            p.team-list__info-description
+              | Currently living in Colorado. Lover of art,
+              | languages and travelling.
+        li.team-list__member
+          .team-list__thumb.thumb-photo
+            picture
+              img(src='images/avatar-photo.png', alt='')
+          .team-list__info.third-member
+            h3.team-list__info-name Diana Wells
+            p.team-list__info-description
+              | Living in Athens, Greece. I love black and white
+              | classics, chillout music and green tea.
+        li.team-list__member.fourth-member
+          .team-list__thumb.thumb-air
+            picture
+              img(src='images/avatar-air.png', alt='')
+          .team-list__info
+            h3.team-list__info-name Christopher Pierce
+            p.team-list__info-description
+              | Star Wars fanatic. I have a persistent enthusiasm
+              | to create new things.
+      button.team__button(type='button') See other partners
+  section.page__variety
+    .variety__container
+      h2.variety__title.title-block Discover holiday activity ideas
+      ul.variety-list
+        li.variety-list__item
+          picture
+            img(src='images/sports.png', alt='')
+            h3.variety-list__item-title Sports and Activis
+        li.variety-list__item
+          picture
+            img(src='images/health.png', alt='')
+            h3.variety-list__item-title Wellness and Health
+        li.variety-list__item
+          picture
+            img(src='images/extreme.png', alt='')
+            h3.variety-list__item-title.extreme-title Extreme Sports and Expeditions
+        li.variety-list__item
+          picture
+            img(src='images/games.png', alt='')
+            h3.variety-list__item-title Games
+        li.variety-list__item.item-wide
+          picture
+            img(src='images/culture.png', alt='')
+            h3.variety-list__item-title.wide-title Culture and Education
+        li.variety-list__item.item-wide
+          picture
+            img(src='images/relax.png', alt='')
+            h3.variety-list__item-title.wide-title Enjomet and Relaxation
+        li.variety-list__item
+          picture
+            img(src='images/travel.png', alt='')
+            h3.variety-list__item-title Travelling
+  section.page__booking
+    .booking__container
+      h2.booking__title.title-block Crate your holiday activity
+      h3.booking__subtitle Hi! What are your holiday interests?
+      form.booking__form(action='#')
+        input.booking__form-field(type='text', placeholder='Enter your insterests')
+        input.booking__form-button(type='submit', value='Search partners')
